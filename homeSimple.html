@@ -1,0 +1,89 @@
+<html lang="en">
+
+<head>
+  <meta charset ="utf-8">
+  <meta http-equiv="X-UA-compatible" content = "IE-edge">
+  <meta name ="viewport" content="width=device-width, inital scale=1">
+    <title>InternWeb</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link href="css/newStyles.css" rel="stylesheet">
+    <style>
+        .heading{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+  <header class="jumbotron">
+    <div class="container">
+      <p align=center>
+      <h1 class="heading">InternWeb</h1>
+    </div>
+  </header>
+  <nav class="nav navbar-inverse navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+        <button  type="button" class = "navbar-toggle collapsed"
+        data-toggle="collapse" data-target="#navbar" aria-expanded ="false"
+        aria-controls="navbar">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="homeSimple.html">
+            <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              Majors <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="compSci.html">Computer Science</a></li>
+                <li><a href="business.html">Business</a></li>
+                <li><a href="civilEng.html">Civil Engineering</a></li>
+                <li><a href="arch.html">Architecture</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="EmployerLogin.html">Sign In</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <div class="container">
+    <div class="row">
+    <h1 class="heading">Find the companies hiring your major for internships in Summer 2018</h1><br>
+    <h4>Select your major from the drop-down menu below:</h4>
+<select name="menu1" id="menu1" class="heading">
+<option>Select your major</option>
+<option value="compSci.html">Computer Science</option>
+<option value="business.html">Business</option>
+<option value="civilEng.html">Civil Engineering</option>
+<option value="arch.html">Architecture</option>
+</select>
+</div>
+</div>
+<footer class="row row-footer">
+  <div class="container">
+    <div class="row">
+      <a href="EmployerLogin.html">Employer Login</a>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript">
+ var urlmenu = document.getElementById( 'menu1' );
+ urlmenu.onchange = function() {
+      window.open( this.options[ this.selectedIndex ].value );
+ };
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+</script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
